@@ -50,6 +50,7 @@
 
 .status-container{
     width: 100%;
+    padding-left: 1rem;
 }
 
 .status-p{
@@ -71,4 +72,37 @@
     width: 100%;
     margin-top: 0;
     z-index: 0;
+}
+
+.border-holder{
+    border-right: 2px solid #3f3f3f83;
+}
+
+@media (max-width:768px){
+    .status{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .status-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .map-container{
+        height: 600px;
+    }
+
+    .status-p{
+        margin-bottom: 0;
+        margin-top: 1rem;
+    }
+
+    .border-holder{
+        border-bottom: 2px solid #3f3f3f83;
+        border-right: none;
+    }
 }

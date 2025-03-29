@@ -60,17 +60,17 @@ const Home = () => {
 
           {ipData && (
             <div className="status d-flex align-items-center">
-              <div className="status-container">
+              <div className="status-container border-holder">
                 <p className="status-p">IP Address</p>
                 <h2 className="status-h2">{ipData.ip}</h2>
               </div>
-              <div className="status-container">
+              <div className="status-container border-holder">
                 <p className="status-p">Location</p>
                 <h2 className="status-h2">
                   {ipData.location.city}, {ipData.location.country}
                 </h2>
               </div>
-              <div className="status-container">
+              <div className="status-container border-holder">
                 <p className="status-p">Timezone</p>
                 <h2 className="status-h2">UTC {ipData.location.timezone}</h2>
               </div>
